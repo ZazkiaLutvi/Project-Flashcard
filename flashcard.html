@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Flashcard</title>
+    <link rel="stylesheet" href="flashcard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="flashcard-container">
+        <a href="index.html" class="home-button">
+            <img src="asset/home.png" alt="Home" class="img-home">
+        </a>
+
+        <h1 class="title">CARD</h1>
+
+        <div class="progress-wrapper">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <div class="main-area">
+        <button class="nav-arrow" onclick="movePrev()">◀◀</button>
+
+            <div class="flip-card" id="cardElement">
+                <div class="flip-card-inner">
+            
+                    <div class="card-face card-front">
+                        <div class="flag-box">
+                            <img src="asset/uk-flag.png" alt="Flag" class="img-flag">
+                        </div>
+                        <div class="image-content">
+                            <img src="asset/karakter1.png" alt="character" class="character-img">
+                        </div>
+                        <h2 class="verb-text">Walk</h2>
+                    </div>
+
+                    <div class="card-face card-back">
+                        <div class="flag-box">
+                            <img src="asset/id-flag.png" alt="Flag" class="img-flag">
+                        </div>
+                        <div class="image-content">
+                            <img src="asset/karakter.png" alt="Walk" class="character-img">
+                        </div>
+                        <h2 class="verb-text">Berjalan</h2>
+                    </div>
+
+                </div>
+            </div>
+
+        <button class="nav-arrow" onclick="moveNext()">▶▶</button>
+    </div>
+
+    <button class="flip-button" onclick="flipCard()">FLIP</button>
+
+    <div id="congratsOverlay" class="overlay">
+        <a href="index.html" class="home-button">
+            <img src="asset/home.png" alt="Home" class="img-home">
+        </a>
+        <h1 class="category-title">FLASH CARD DAILY</h1>
+        
+        <div class="medal-container">
+            <img src="asset/medal.png" alt="Medal" class="medal-img"> 
+        </div>
+
+        <div class="congrats-wrapper" onclick="location.reload()">
+            <img src="asset/congratulations.png" alt="Congratulations" class="btn-img">
+            <p>Klik untuk mulai ulang!</p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
